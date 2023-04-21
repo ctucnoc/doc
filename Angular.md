@@ -13,3 +13,26 @@ La arquitectura de Angular se basa en el patrón de arquitectura Model-View-Cont
 4.- Pipes: Los pipes se utilizan para transformar el valor de una propiedad antes de mostrarlo en la interfaz de usuario.
 
 5.- Módulos: Los módulos se utilizan para organizar los componentes, servicios y otros artefactos de una aplicación en bloques funcionales.
+
+
+
+### RxJS
+
+- Es parte del proyecto ReactiveX(Colección de proyectos de código abierto que incluye RxJava, RxJS, RxSwift, Rx.NET y otros)
+-Es una biblioteca para programación reactiva usando Observables.
+- Es una forma de escribir programas asincronos basado en eventos mediante secuencia de Observables.
+-Proporciona un conjunto de operadores que se puede utilizar para transformar filtrar y convinar observables. Estos operadores puede utilizarce para crear flujo de datos.
+
+
+
+# Observable
+- es un objeyo que contiene un método subscrite, el cual tiene como parametro un observer y devuelve un objeto suscription.
+
+# Observer
+- es un objeto que contiene 3 métodos next(), error() y complete().
+- se suscribe a un observable y cada vez que este emite un valor  se ejecuta el metodo next() y cuando finaliza las emisiones llaman al método complete(). En caso de error al método error().
+
+# Subscription
+- objeto que tiene un método unsubscription().
+- es el que mantiene la relación entre el observer y el observable.
+- El método unsubscription() se ejecuta para finalizar una relación, haciendo que el observer dejaria de recibir los valores emitidos.
